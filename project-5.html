@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List Manager</title>
+  <link rel="stylesheet" href="./project-5.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Name List</h1>
+
+    <!-- Add Student Section -->
+    <div class="input-section">
+      <input type="text" id="studentInput" placeholder="Enter student name">
+      <button id="addButton">Add Student</button>
+    </div>
+
+    <!-- Search and Count Section -->
+    <div class="search-section">
+      <input type="text" id="searchInput" placeholder="Search students...">
+      <span id="studentCount" class="student-count">0 students</span>
+    </div>
+
+    <!-- Clear All Button -->
+    <div class="action-buttons">
+      <button id="clearAllButton" class="button-danger">Clear All</button>
+    </div>
+
+    <!-- Edit Student Section (Hidden by default) -->
+    <div id="editSection" class="edit-section hidden">
+      <input type="text" id="editInput" placeholder="Edit student name">
+      <button id="saveButton" class="button-success">Save</button>
+      <button id="cancelButton" class="button-secondary">Cancel</button>
+    </div>
+
+    <!-- Student List -->
+    <ul id="studentList" class="student-list">
+      <!-- Students will be added here dynamically -->
+    </ul>
+
+    <!-- Messages -->
+    <p id="emptyMessage" class="empty-message">No students added yet</p>
+    <p id="errorMessage" class="error-message hidden"></p>
+  </div>
+
+  <script src="./project-5.js"></script>
+</body>
+
+</html>
