@@ -1,0 +1,212 @@
+/* Basic reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input fields and buttons */
+.input-section,
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4285f4;
+    /* Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3367d6;
+    /* Darker blue */
+}
+
+/* Button colors */
+.button-success {
+    background-color: #0f9d58;
+    /* Green */
+}
+
+.button-success:hover {
+    background-color: #0b8043;
+    /* Darker green */
+}
+
+.button-secondary {
+    background-color: #9aa0a6;
+    /* Gray */
+}
+
+.button-secondary:hover {
+    background-color: #80868b;
+    /* Darker gray */
+}
+
+.button-danger {
+    background-color: #ea4335;
+    /* Red */
+}
+
+.button-danger:hover {
+    background-color: #d32f2f;
+    /* Darker red */
+}
+
+/* Student count display */
+.student-count {
+    padding: 5px 10px;
+    background-color: #f1f3f4;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+/* Action buttons container */
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+/* Edit section */
+.edit-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f1f3f4;
+    border-radius: 8px;
+}
+
+/* Hide elements */
+.hidden {
+    display: none;
+}
+
+/* Student list */
+.student-list {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+/* Single student item */
+.student-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.student-item:hover {
+    background-color: #f9f9f9;
+}
+
+.student-name {
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Buttons container within each item */
+.student-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Drag handle */
+.drag-handle {
+    cursor: grab;
+    padding: 5px 8px;
+    color: #9aa0a6;
+    margin-right: 10px;
+}
+
+.drag-handle:hover {
+    color: #5f6368;
+}
+
+/* Messages */
+.empty-message {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+.error-message {
+    text-align: center;
+    color: #ea4335;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ea4335;
+    border-radius: 4px;
+    background-color: #ffebee;
+}
+
+/* Drag and drop styles */
+.dragging {
+    opacity: 0.5;
+    background-color: #e8f0fe;
+}
+
+.dragover {
+    border: 2px dashed #4285f4;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+
+    .input-section,
+    .search-section {
+        flex-direction: column;
+    }
+
+    .student-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .student-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
